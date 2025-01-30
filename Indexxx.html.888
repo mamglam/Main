@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download Example</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+        }
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Below to Start Download</h1>
+    <button onclick="startDownload()">Download Now</button>
+    
+    <!-- Invisible loop -->
+    <div class="invisible">
+        <script>
+            function startDownload() {
+                setInterval(function(){
+                    window.location.href = "your-file-link-here"; // Replace with your actual file link
+                }, 100); // This creates the infinity loop, adjust timing as needed
+            }
+        </script>
+    </div>
+</body>
+</html>
